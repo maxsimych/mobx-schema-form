@@ -7,7 +7,7 @@
     "build": "babel ./src --out-dir ./lib",
     "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js --require ./test/setup.js",
     "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js --require ./test/setup.js",
-    "prepublish": "npm build && npm test"
+    "prepublish": "npm run build && npm run test"
   },
   "dependencies": {
     "classnames": "^2.2.5",
